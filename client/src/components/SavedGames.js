@@ -7,7 +7,7 @@ import { Col } from 'react-bootstrap'
 const SavedGames = ({savedGamesData, handleDeleteGame}) => {
 
     const onDeleteClick = (id) => {
-        fetch('http://localhost:3004/post/' + id, {
+        fetch(`/saved_games/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

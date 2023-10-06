@@ -45,7 +45,7 @@ const SavePlayerGameForm = ({handlePostData}) => {
             body: JSON.stringify({ ...formData }),
         };
 
-        fetch("http://localhost:3004/post", configObj)
+        fetch("/saved_games", configObj)
             .then((resp) => resp.json())
             .then((newPost) => {
                 handlePostData(newPost)
