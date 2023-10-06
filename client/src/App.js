@@ -54,7 +54,7 @@ const App = () => {
   // Fetch intitial saved games data
 
   useEffect(() => {
-    fetch('http://localhost:3004/post')
+    fetch('/saved_games')
 
         .then(res => res.json())
         .then(data => {
