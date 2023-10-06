@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: lichessdex_deploy_production
-  username: lichessdex_deploy
-  password: <%= ENV["LICHESSDEX_DEPLOY_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
